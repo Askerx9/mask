@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 2000);
   setTimeout(() => {
     carouselItem.classList.add('out')
-  }, 6000);
+  }, 6001);
 //   const imgMask = document.querySelector('.carousel__img')
 //   const img = document.querySelector('.bckg_img')
 
