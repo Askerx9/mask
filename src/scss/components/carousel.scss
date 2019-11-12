@@ -1,0 +1,104 @@
+.carousel {
+
+  height: 60vh;
+  max-height: 700px;
+  position: relative;
+  z-index: 10;
+
+  &__item{
+    width: percentage(1290 / 1680);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: auto percentage(100 / 1290) auto auto;
+    cursor: pointer;
+
+    .carousel__content{
+      width: 575px;
+
+      & .subtitle,
+      & p {
+        transform: translateY(100px);
+        opacity: 0;
+        transition: opacity 600ms ease, transform 600ms ease-in-out;
+      }
+
+      & p {
+        transition-delay: 50ms;
+      }
+    }
+    .bckg_img{
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      pointer-events: none;
+      cursor: default;
+      transition: all 0.4s ease;
+      // transform: translate(-50%, -50%);
+      // max-width: 1600px;
+
+      background-image: url(../images/iceland-color.jpg);
+      background-position: center;
+      background-size: cover;
+
+    }
+
+    .carousel__img{
+      position: absolute;
+      right: 0;
+      width: percentage(860 / 1290);
+      height: 100%;
+      // box-shadow: 0 0 20px rgba(#000000, .6);
+      z-index: -1;
+      // overflow: hidden;
+      // opacity: 0;
+      // transition: opacity 300ms ease, width 600ms cubic-bezier(0.1, 0.43, 0.13, 1.1), transform 600ms ease-in-out;
+
+      // .bckg_img{
+      //   display: block;
+      //   width: 100vw;
+      //   height: 100vh;
+      //   position: fixed;
+      //   top: 50%;
+      //   left: 50%;
+      //   transform: translate(-50%, -50%);
+      //   // max-width: 1600px;
+
+      //   background-image: url(../images/iceland-color.jpg);
+      //   background-position: center;
+      //   background-size: cover;
+      // }
+    }
+
+    &.active{
+      .carousel__content .subtitle,
+      .carousel__content p {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      &.out{
+        .carousel__content .subtitle,
+        .carousel__content p {
+          transform: translateY(-100px);
+          opacity: 0;
+        }
+      }
+
+      .carousel__img{
+        // transform: translateX(0px);
+        // width: percentage(860 / 1290);
+        // opacity: 1;
+
+      }
+
+    }
+
+  }
+
+}

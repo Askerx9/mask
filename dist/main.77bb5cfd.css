@@ -1,0 +1,253 @@
+/**
+ * @tableofcontents
+ *
+ * 1. harmonize
+ */
+
+/** @section 1. harmonize */
+
+blockquote,
+body,
+dd,
+dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+fieldset,
+ol,
+p,
+ul
+{
+	margin: 0;
+}
+
+button,
+dialog,
+fieldset,
+legend,
+ol,
+ul
+{
+	padding: 0;
+}
+
+ol,
+ul
+{
+	list-style-type: none;
+}
+
+table
+{
+	border-collapse: collapse;
+}
+
+a
+{
+	color: inherit;
+	text-decoration: none;
+}
+
+dialog
+{
+	background: none;
+}
+
+button
+{
+	cursor: pointer;
+}
+
+button,
+input,
+select,
+textarea
+{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font: inherit;
+}
+
+button,
+dialog,
+input,
+img,
+fieldset,
+select,
+textarea
+{
+	border: 0;
+}
+
+button::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner
+{
+	border: 0;
+}
+
+:focus
+{
+	outline: 0;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid
+{
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	outline: none;
+}
+
+button[disabled],
+input[disabled],
+input[readonly]
+{
+	pointer-events: none;
+}
+
+input[type="search"]
+{
+	border-radius: 0;
+}
+
+input[type="search"]::-ms-clear
+{
+	display: none;
+}
+
+input[type="search"],
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration
+{
+	-webkit-appearance: none;
+}
+
+audio,
+img,
+video
+{
+	max-width: 100%;
+}
+.carousel {
+  height: 60vh;
+  max-height: 700px;
+  position: relative;
+  z-index: 10;
+}
+.carousel__item {
+  width: 76.7857142857%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: auto 7.7519379845% auto auto;
+  cursor: pointer;
+}
+.carousel__item .carousel__content {
+  width: 575px;
+}
+.carousel__item .carousel__content .subtitle, .carousel__item .carousel__content p {
+  -webkit-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+          transform: translateY(100px);
+  opacity: 0;
+  -webkit-transition: opacity 600ms ease, -webkit-transform 600ms ease-in-out;
+  transition: opacity 600ms ease, -webkit-transform 600ms ease-in-out;
+  -o-transition: opacity 600ms ease, transform 600ms ease-in-out;
+  transition: opacity 600ms ease, transform 600ms ease-in-out;
+  transition: opacity 600ms ease, transform 600ms ease-in-out, -webkit-transform 600ms ease-in-out;
+}
+.carousel__item .carousel__content p {
+  -webkit-transition-delay: 50ms;
+       -o-transition-delay: 50ms;
+          transition-delay: 50ms;
+}
+.carousel__item .bckg_img {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+  cursor: default;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background-image: url(/iceland-color.b0d95856.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.carousel__item .carousel__img {
+  position: absolute;
+  right: 0;
+  width: 66.6666666667%;
+  height: 100%;
+  z-index: -1;
+}
+.carousel__item.active .carousel__content .subtitle,
+.carousel__item.active .carousel__content p {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+.carousel__item.active.out .carousel__content .subtitle,
+.carousel__item.active.out .carousel__content p {
+  -webkit-transform: translateY(-100px);
+      -ms-transform: translateY(-100px);
+          transform: translateY(-100px);
+  opacity: 0;
+}
+.subtitle {
+  font-size: 5em;
+  margin-bottom: 0.2em;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.4;
+  background: url(/iceland-bg.0136a29e.jpg) no-repeat center;
+  background-size: cover;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 87.5%;
+  margin: 0 auto;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.run {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #eee;
+  padding: 5px 15px;
+}
+
+/*# sourceMappingURL=/main.77bb5cfd.css.map */
